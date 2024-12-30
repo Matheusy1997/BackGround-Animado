@@ -1,5 +1,5 @@
 @charset "UTF-8";
-
+/* Falta fazer a flexibilidade para o celular do conteudo*/
 body{
     margin: 0px;
     padding: 0px;
@@ -14,7 +14,6 @@ div.container{
     flex-direction: column;
     width: 100vw;
     height: 100vh;
-    z-index: -1;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0.562), rgba(255, 255, 255, 0.151));
 }
 
@@ -28,16 +27,16 @@ header{
     position: absolute;
 }
 
-.logo{
-    width: 80px;
-    height: 60px;
-    padding-left: 20px;
-    margin-top: 10px;
-    
+header > nav{
+    height: 80px;
+    display: flex;
+    align-items: center;
 }
 
-header > nav{
-    padding-right: 20px;
+.logo{
+    width: 80px;
+    padding-left: 20px;
+    margin-top: 10px;
     
 }
 
@@ -46,7 +45,7 @@ header > nav > a{
     font-size: 16px;
     text-decoration: none;
     color: white;
-    margin: 15px;
+    margin: 15px 30px 15px 15px;
     padding: 15px;
     border-radius: 30px;
     
@@ -69,8 +68,8 @@ a#inscreva:hover{
     text-shadow: 1px 1px 2px rgba(255, 217, 0, 0.5);
     font-size: 20px;
     background: rgba(236, 213, 83, 0.185);
-    transition: 0.5s;
-    margin: 1px;
+    transition: 0.2s;
+    margin: 1px 16px 1px 2px;
     
 }
 
@@ -92,16 +91,66 @@ main > video{
 }
 
 main > img{
-    margin-left: 150px;
-    width: 500px;
+    margin-left: 7.5%;
+    max-width: 25vw;
     opacity: 50%;
 }
 
 main > p {
     color: white;
     opacity: 40%;
-    width: 600px;
-    margin-left: 110px;
+    max-width: 29vw;
+    margin-left: 6%;
     text-indent: 15px;
     font-size: 16px;
+    text-align: justify;
+}
+
+@media screen and (min-width: 300px) and (max-width: 1024px) {
+    
+    header{
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    header .logo{
+        display: none;
+    }
+
+    header > nav > a {
+        font-size: 12px;
+        margin: 0px;
+        padding: 10px;
+    }
+
+    a#inscreva{
+        margin: 0 7px 0 7px;
+    }
+    
+    a#login:hover{
+        font-size: 14px;
+    }
+
+    a#inscreva:hover{
+        font-size: 14px;
+        margin: 0;
+    }
+
+    main{
+        height: 100vh;
+        width: 100vw;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start;
+    }
+
+    main > img{
+        margin: 20% 0 0 0;
+        width: 100px;
+    }
+
+
+    main > p{
+        display: none;
+    }
 }
