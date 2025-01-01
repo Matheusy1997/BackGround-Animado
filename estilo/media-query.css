@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+@media screen and (min-width: 300px) and (max-width: 750px) {
+  header {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  header .logo {
+    display: none;
+  }
+
+  header > nav > a {
+    font-size: 12px;
+    margin: 0px;
+    padding: 10px;
+  }
+
+  a#inscreva {
+    margin: 0 7px 0 7px;
+  }
+
+  a#login:hover {
+    font-size: 14px;
+  }
+
+  a#inscreva:hover {
+    font-size: 14px;
+    margin: 0;
+  }
+
+  main {
+    height: 100vh;
+    width: 100vw;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  main > img {
+    margin: 0 auto 370px;
+    min-width: 200px;
+  }
+
+  main > a {
+    font-size: 15px;
+    background-color: rgba(214, 182, 2, 0.322);
+    padding: 15px 50px;
+    top: 75%;
+    left: auto;
+    border-radius: 40px;
+    text-decoration: none;
+    color: rgb(250, 238, 174);
+    text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.747);
+    transition: 1s;
+  }
+
+  main > a:hover {
+    zoom: 1.2;
+    background: rgb(184, 158, 12);
+    color: white;
+  }
+
+  main > p {
+    display: none;
+  }
+}
