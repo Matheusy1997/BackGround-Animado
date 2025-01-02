@@ -43,32 +43,26 @@ header > nav {
 
 header > nav > a {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 14px;
   text-decoration: none;
   color: white;
-  margin: 15px 30px 15px 15px;
-  padding: 15px;
+  margin: 0 10px 0 0;
+  padding: 12px 20px;
   border-radius: 30px;
-}
-
-a#login {
-  margin: 0px;
-  padding: 15px;
 }
 
 a#login:hover {
   text-shadow: 1px 1px 2px rgba(255, 217, 0, 0.5);
-  font-size: 20px;
+  padding: 12px 20px;
   background: rgba(236, 213, 83, 0.185);
-  transition: 0.5s;
+  transition: 0.7s;
 }
 
-a#inscreva:hover {
+a#cadastre:hover {
+  padding: 12px 20px;
   text-shadow: 1px 1px 2px rgba(255, 217, 0, 0.5);
-  font-size: 20px;
   background: rgba(236, 213, 83, 0.185);
-  transition: 0.2s;
-  margin: 1px 16px 1px 2px;
+  transition: 0.7s;
 }
 
 main {
@@ -106,7 +100,7 @@ main > a {
   text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.747);
   top: 78%;
   left: 44%;
-  transition: 0.7s;
+  transition: 1s;
 }
 
 main > a:hover {
