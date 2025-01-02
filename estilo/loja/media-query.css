@@ -1,0 +1,52 @@
+@media screen and (min-width: 640px) and (max-width: 1024px){
+    html{
+        transition: 0.5s;
+    }
+    body{
+        width: 97vw;
+        height: 100vh;
+    }
+
+    main{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+
+    div#container{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: flex-start; 
+    }
+
+    div.produto{
+        width: 44%;
+        height: 528px;
+        margin: 15px;
+    }
+
+    div.produto:hover{
+        width: 45%;
+        
+    }
+    
+    main > h1{
+        align-self: center;
+    }
+
+    div#configuracao{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: stretch;
+    }
+
+    div#configuracao > aside{
+        margin-left: 20px;
+        width: 400px;
+    }
+}
