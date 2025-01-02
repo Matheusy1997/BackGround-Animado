@@ -56,7 +56,9 @@
   }
 
   main > a:hover {
-    zoom: 1.2;
+    font-size: 18px;
+    top: 75%;
+    left: auto;
     background: rgb(184, 158, 12);
     color: white;
   }
