@@ -45,6 +45,7 @@ header > nav > a {
   font-weight: bold;
   font-size: 14px;
   text-decoration: none;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.425);
   color: white;
   margin: 0 10px 0 0;
   padding: 12px 20px;
@@ -54,14 +55,14 @@ header > nav > a {
 a#login:hover {
   text-shadow: 1px 1px 2px rgba(255, 217, 0, 0.5);
   padding: 12px 20px;
-  background: rgba(236, 213, 83, 0.185);
+  background: rgba(236, 213, 83, 0.616);
   transition: 0.7s;
 }
 
 a#cadastre:hover {
   padding: 12px 20px;
   text-shadow: 1px 1px 2px rgba(255, 217, 0, 0.5);
-  background: rgba(236, 213, 83, 0.185);
+  background: rgba(236, 213, 83, 0.616);
   transition: 0.7s;
 }
 

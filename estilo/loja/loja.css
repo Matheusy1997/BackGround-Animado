@@ -100,12 +100,12 @@ div.produto > p > a{
     padding: 9px 30px;
     border-radius: 20px;
     color: white;
+    transition: 0.8s;
 }
 
 div.produto > p > a:hover{
     background: rgba(223, 20, 20, 0.925);
     font-size: 15px;
-    transition: 0.8s;
 }
 
 div#container img{
