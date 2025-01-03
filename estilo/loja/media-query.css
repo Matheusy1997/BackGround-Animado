@@ -3,7 +3,7 @@
         transition: 0.5s;
     }
     body{
-        width: 97vw;
+        width: 96vw;
         height: 100vh;
     }
 
@@ -23,13 +23,13 @@
     }
 
     div.produto{
-        width: 44%;
+        width: 43%;
         height: 528px;
         margin: 15px;
     }
 
     div.produto:hover{
-        width: 45%;
+        width: 44%;
         
     }
     
@@ -48,5 +48,80 @@
     div#configuracao > aside{
         margin-left: 20px;
         width: 400px;
+    }
+}
+
+@media screen and (min-width: 1025px){
+    body{
+        width: 98vw;
+        height: 100vh;
+        display: flex;
+        flex-flow: column nowrap;
+    }
+
+    header{
+        display: flex;
+        justify-content: flex-end;
+        margin: 20px 0px;
+    }
+
+    header > nav{
+        margin-right: 67px;
+    }
+
+    header > nav > a{
+        font-size: 18px;
+        padding: 10px 30px;
+    }
+
+    main{
+        width: 100%;
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    main#container{
+        display: flex;
+        flex-flow: row wrap;
+    }
+
+    div.produto{
+        width: 470px;
+        margin: 10px;
+        transition: 1s;
+    }
+
+    div.produto:hover{
+        width: 480px;
+        margin: 0px;
+    }
+
+    main > h1{
+        font-size: 22px;
+        color: black;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.418);
+    }
+
+    div#configuracao{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-evenly;
+    }
+
+    div#configuracao > aside > h2{
+        width: 600px;
+        font-size: 15px;
+        color: white;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.418);
+    }
+
+    div#configuracao > aside > ul{
+        font-size: 14px;
+        text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.418);
+        text-align: justify;
+    }
+    
+    footer{
+        display: none;
     }
 }

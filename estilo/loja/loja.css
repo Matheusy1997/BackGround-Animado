@@ -7,6 +7,11 @@ body{
     background: rgba(0, 0, 0, 0.829);
     color: white;
     font-size: 13px;
+    background-image: url(/midia/loja/tervore.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
 }
 
 header{
@@ -20,16 +25,17 @@ header{
 
 header > nav > a{
     text-decoration: none;
-    color: white;
+    font-weight: bold;
+    color: black;
     margin-right: 5px;
     font-size: 14px;
-    padding: 7px;
+    padding: 7px 10px;
     border-radius: 40px;
     transition: 1s;
 }
 
 header > nav > a:hover {
-    background: rgb(184, 158, 12);
+    background: rgb(143, 123, 9);
     color: white;
 }
 
