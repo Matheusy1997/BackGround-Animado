@@ -18,21 +18,27 @@
         </header>
         <main>
             <form action="">
-                <div id="input">
+                <div id="email">
                     <p>
-                        <input type="email" name="email" id="email" placeholder="E-mail">
-                    </p>
-                    <p>
-                        <input type="password" name="senha" id="senha" placeholder="Senha">
+                        <input type="email" name="email" id="email" placeholder="E-mail" required>
                     </p>
                 </div>
-                <p>
-                    <button type="submit">Entrar</button>
-                </p>
-                <p>
-                    <a href="#">Esqueci minha senha</a>
-                    <a href="#">Criar Conta</a>
-                </p>
+                <div id="senha">
+                    <p>
+                        <input type="password" name="senha" id="senha" placeholder="Senha" required min="8">
+                    </p>
+                </div>
+                <div id="btnEntrar">
+                    <p>
+                        <input type="submit" value="Entrar">
+                    </p>
+                </div>
+                <div id="aside">
+                    <p>
+                        <a href="#">Esqueci minha senha</a>
+                        <a href="#">Criar Conta</a>
+                    </p>
+                </div>
             </form>
         </main>
         <footer>
